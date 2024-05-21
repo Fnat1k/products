@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ваше Ім'я">
+    <title>Продукти - Головна</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        a { color: blue; } /* Колір гіперпосилань */
+        body { background-color: #f0f8ff; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ccc; padding: 10px; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1 style="font-family: Arial, sans-serif; text-align: center;"><dl><dt>Вітаємо на сайті про продукти!</dt></dl></h1>
+    <p style="font-family: Verdana, sans-serif; font-size: 14px; color: #333;">Це головна сторінка сайту про продукти. Дізнайтеся більше про різноманітні види продуктів та їх користь.</p>
+    <p class="custom-paragraph">Деякі популярні категорії продуктів:</p>
+    <ul style="list-style-type: disc;">
+        <li><a href="fruits.html">Фрукти</a></li>
+        <li><a href="vegetables.html">Овочі</a></li>
+        <li><a href="dairy.html">Молочні продукти</a></li>
+    </ul>
+    <nav>
+        <ul>
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="fruits.html#apple">Фрукти</a></li>
+            <li><a href="vegetables.html">Овочі</a></li>
+            <li><a href="dairy.html">Молочні продукти</a></li>
+            <li><a href="https://uk.wikipedia.org/wiki/Фрукт" target="_blank">Вікіпедія</a></li>
+        </ul>
+    </nav>
+    <p id="summary">Ось короткий підсумок про різні категорії продуктів.</p>
+    <ul style="list-style-type: square;">
+        <li>Фрукти - багаті на вітаміни та мінерали.</li>
+        <li>Овочі - чудове джерело поживних речовин.</li>
+        <li>Молочні продукти - забезпечують організм кальцієм та білками.</li>
+    </ul>
+    <a href="#summary">Повернутися до підсумку</a>
+    <h2>Таблиця продуктів</h2>
+    <table  cellpadding="5" cellspacing="0" style="width: 100%;">
+        <thead style="background-color: #ccc;">
+            <tr>
+                <th>Зображення 1</th>
+                <th>Зображення 2</th>
+                <th>Зображення 3</th>
+                <th>Зображення 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src="apple.png" alt="Яблуко" width="50" height="50"></td>
+                <td><img src="banana.jpg" alt="Банан" width="50" height="50"></td>
+                <td><img src="carrot.png" alt="Морква" width="50" height="50"></td>
+                <td><img src="milk.jpg" alt="Молоко" width="50" height="50"></td>
+            </tr>
+            <tr>
+                <td><a href="fruits.html#apple">Яблуко</a></td>
+                <td><a href="fruits.html#banana">Банан</a></td>
+                <td><a href="vegetables.html#carrot">Морква</a></td>
+                <td><a href="dairy.html#milk">Молоко</a></td>
+            </tr>
+            <tr>
+                <td>Смачний і корисний фрукт.</td>
+                <td>Високоенергетичний продукт, багатий на калій.</td>
+                <td>Джерело вітамінів.</td>
+                <td>Забезпечує організм кальцієм та білками.</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Складна таблиця</h2>
+    <table   cellpadding="10" cellspacing="5">
+        <colgroup>
+            <col style="background-color:#f2f2f2;">
+            <col span="2" style="background-color:#e6f7ff;">
+            <col style="background-color:#f2f2f2;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th colspan="4" style="text-align: center;">Складна таблиця продуктів</th>
+            </tr>
+            <tr>
+                <th>Категорія</th>
+                <th>Продукт</th>
+                <th>Опис</th>
+                <th>Зображення</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2" style="text-align: center;">Фрукти</td>
+                <td><b><i>Яблуко</i></b></td>
+                <td>Смачний і корисний фрукт.</td>
+                <td><img src="apple.png" alt="Яблуко" width="200" height="200"></td>
+            </tr>
+            <tr>
+                <td><b><i>Банан</i></b></td>
+                <td>Високоенергетичний продукт, багатий на калій.</td>
+                <td><img src="banana.jpg" alt="Банан" width="50" height="50"></td>
+            </tr>
+            <tr>
+                <td rowspan="2" style="text-align: center;">Овочі</td>
+                <td>Морква</td>
+                <td>Джерело вітамінів.</td>
+                <td><img src="carrot.png" alt="Морква" width="100" height="100"></td>
+            </tr>
+            <tr>
+                <td>Помідор</td>
+                <td>Багатий на антиоксиданти.</td>
+                <td><img src="tomato.jpg" alt="Помідор" width="100" height="100"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+ 
+    <iframe src="https://uk.wikipedia.org/wiki/Фрукт" width="600" height="400" style="border: none;"></iframe>
+</body>
+</html>

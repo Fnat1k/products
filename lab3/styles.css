@@ -1,0 +1,85 @@
+/* Стиль для тіла (BODY) */
+body {
+    background-color: #f0f8ff;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для заголовків (HN) */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Стиль для посилань */
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+/* Перевизначення стилю для посилань в документі */
+body a {
+    color: red !important;
+}
+
+/* Внутрішній стиль для абзацу */
+p.custom-paragraph {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Стиль для списків */
+ul, ol, dl {
+    margin: 20px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+/* Стиль для таблиць */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Використання важливих оголошень */
+h1 {
+    font-size: 24px !important;
+    color: #000 !important;
+}
