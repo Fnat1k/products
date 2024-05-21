@@ -1,0 +1,156 @@
+/* Стиль для тіла (BODY) */
+body {
+    background-color: #f0f8ff;
+    font-family: Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для заголовків (HN) */
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Стиль для посилань */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: purple;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+a:active {
+    color: red;
+}
+
+/* Перевизначення стилю для посилань в документі */
+body a {
+    color: red !important;
+}
+
+/* Внутрішній стиль для абзацу */
+p.custom-paragraph {
+    font-size: 16px;
+    color: #555;
+    margin: 20px 0;
+}
+
+/* Стиль для списків */
+ul, ol, dl {
+    margin: 20px;
+    padding: 0;
+}
+
+ul {
+    list-style-type: square;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+dl dt {
+    font-weight: bold;
+}
+
+dl dd {
+    margin-left: 20px;
+}
+
+/* Стиль для таблиць */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/* Використання важливих оголошень */
+h1 {
+    font-size: 24px !important;
+    color: #000 !important;
+}
+
+/* Контекстні селектори */
+nav ul li a {
+    color: green; /* Посилання в навігації */
+}
+
+/* Сусідні селектори */
+h2 + p {
+    color: blue; /* Абзац одразу після заголовку h2 */
+}
+
+/* Дочірні селектори */
+ul > li {
+    font-weight: bold; /* Всі прямі нащадки ul */
+}
+
+/* Плаваючі блоки */
+.float-left {
+    float: left;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Позиціонування блоків */
+.positioned {
+    position: relative;
+    top: 60px;
+    left: 20px;
+    background-color: #e6f7ff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+/* Псевдоклас :first-child */
+ul > li:first-child {
+    color: red;
+}
+
+/* Псевдоелементи :before, :after */
+h1:before {
+    content: "🌟 ";
+    color: gold;
+}
+
+h1:after {
+    content: " 🌟";
+    color: gold;
+}
+
+/* Стиль для span */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+}
